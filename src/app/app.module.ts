@@ -14,6 +14,7 @@ import { LOCALE_ID } from '@angular/core';
 import localePt from '@angular/common/locales/pt'
 import { registerLocaleData } from '@angular/common';
 
+import {HttpClientModule} from '@angular/common/http'
 
 registerLocaleData(localePt,'pt');
 
@@ -31,6 +32,7 @@ registerLocaleData(localePt,'pt');
     AppRoutingModule,
     NgbModule,
     FormsModule,
+    HttpClientModule,
   ],
   providers: [
     provideClientHydration(withEventReplay()),
